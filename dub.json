@@ -1,0 +1,29 @@
+{
+    "name": "rsa",
+    "description": "Rivest-Shamir-Adleman asymmetric cryptography",
+    "authors": [
+        "Jonathan M. Wilbur <jonathan@wilbur.space>"
+    ],
+    "license": "MIT",
+	"homepage": "https://github.com/JonathanWilbur/rsa-d",
+	"targetType": "executable",
+	"importPaths": [
+		"source/"
+	],
+	"sourcePaths": [
+		"source/"
+	],
+    "excludedSourceFiles": [
+		"source/tools/*"
+	],
+	"targetPath": "build/libraries/",
+	"buildRequirements": [
+		"silenceWarnings",
+		"silenceDeprecations",
+		"requireBoundsCheck"
+	],
+	"dependencies": {
+		"asn1": "~>2.2.0",
+		"csprng": "~>1.1.0"
+	}
+}
